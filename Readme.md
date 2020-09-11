@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Алексей Охапкин](https://up.htmlacademy.ru/htmlcss/29/user/956313).
-* Наставник: [Виктория Коваленко].
+* Студент: Алексей Охапкин (https://up.htmlacademy.ru/htmlcss/29/user/956313).
+* Наставник: Виктория Коваленко (https://htmlacademy.ru/profile/id42638).
 
 ---
 
