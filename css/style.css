@@ -1,3 +1,250 @@
-body {
-  background: #e2e2e2;
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basic-rating: #666666;
+
+  /* form background */
+  --basic-light-grey: #F2F2F2;
+
+  --basic-grey: #EEEEEE;
+  --bacic-border-grey: #E5E5E5;
+
+  --basic-white: #ffffff;
+  --basic-white-opacity: RGBA(255,255,255,0.3);
+
+  --basic-blue: #81B3D2;
+  --basic-dark-blue: #669EC0;
+  --basic-extra-dark-blue: #5496BD;
+
+  --basic-brown: #766357;
+  --basic-dark-brown: #604E43;
+  --basic-extra-dark-brown: #503E33;
+}
+
+
+/* global */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-dark);
+  text-transform: uppercase;
+
+  background: var(--basic-light-grey);
+}
+
+.button {
+  font: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-dark);
+  border: none;
+  cursor: pointer;
+}
+
+.button:active {
+  color: var(--basic-white-opacity);
+}
+
+/* caption */
+
+.caption {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.site-navigation-link:not([href]) {
+  color: var(--basic-brown);
+}
+
+.site-navigation-link:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation-link:active {
+  opacity: 0.3;
+}
+
+
+
+/* common */
+
+.common-section {
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.banner-wrapper {
+  background-color: var(--basic-light-grey);
+}
+
+/* advantages */
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantage-item {
+  text-align: center;
+}
+
+.advantage-item:nth-of-type(1), .advantage-item:nth-of-type(2) {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-item {
+  text-align: center;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
+
+/* search-section */
+
+.search-section{
+  background-color: var(--basic-white);
+}
+
+.search-section-slogan {
+  text-align: center;
+}
+
+.search-form-open-button {
+  background-color: var(--basic-brown);
+}
+
+.search-form-open-button:hover {
+  background-color: var(--basic-dark-brown);
+}
+
+.search-form-open-button:active {
+  background-color: var(--basic-extra-dark-brown);
+}
+
+/* footer */
+
+.main-footer {
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.footer-phone:hover {
+  color: var(--basic-blue);
+}
+
+.footer-phone:active {
+  opacity: 0.3;
+}
+
+/* catalog */
+
+.filter-section {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+.sort-section {
+  background-color: var(--basic-white);
+  border-bottom: 1px solid var(--bacic-border-grey);
+}
+
+.search-result-section {
+  background-color: var(--basic-white);
+}
+
+.search-result-list {
+  list-style: none;
+}
+
+.search-result-item {
+  border-bottom: 1px solid var(--bacic-border-grey);
+}
+
+.search-result-item:hover .search-result-item-caption {
+  color: var(--basic-blue);
+}
+
+.button-info {
+  background-color: var(--basic-blue);
+}
+
+.button-info:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.button-info:active {
+  background-color: var(--basic-extra-dark-blue);
+  color: var(--basic-white-opacity);
+}
+
+.button-order {
+  background-color: var(--basic-brown);
+}
+
+.button-order:hover {
+  background-color: var(--basic-dark-brown);
+}
+
+.button-order:active {
+  background-color: var(--basic-extra-dark-brown);
+  color: var(--basic-white-opacity);
+}
+
+.search-result-item-rating {
+  color: var(--basic-rating);
+  background-color: var(--basic-light-grey);
+  width: max-content;
 }
