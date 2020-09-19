@@ -2,10 +2,10 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-opacity: RGBA(0, 0, 0, 0.3);
   --basic-dark: #333333;
   --basic-rating: #666666;
 
-  /* form background */
   --basic-light-grey: #F2F2F2;
 
   --basic-grey: #EEEEEE;
@@ -25,6 +25,10 @@
 
 
 /* global */
+
+a {
+  text-decoration: none;
+}
 
 img {
   max-width: 100%;
@@ -66,7 +70,6 @@ img {
 /* caption */
 
 .caption {
-  text-decoration: none;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -181,6 +184,10 @@ img {
   text-align: center;
 }
 
+.footer-phone {
+  text-decoration: none;
+}
+
 .footer-phone:hover {
   color: var(--basic-blue);
 }
@@ -225,8 +232,12 @@ img {
   border-bottom: 1px solid var(--bacic-border-grey);
 }
 
-.search-result-item:hover .search-result-item-caption {
+.search-result-item-caption:hover {
   color: var(--basic-blue);
+}
+
+.search-result-item-caption:active {
+  color: var(--basic-black-opacity);
 }
 
 .button-info {
