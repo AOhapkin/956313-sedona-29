@@ -108,6 +108,7 @@ body {
   line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  position: relative;
 }
 
 .main-header-logo {
@@ -115,7 +116,7 @@ body {
   position: absolute;
   transform: translatex(-50%);
   left: 50%;
-
+  z-index: 2;
 }
 
 .site-navigation {
@@ -158,6 +159,7 @@ body {
 }
 
 .banner-wrapper {
+  min-height: 509px;
   padding-top: 76px;
   background-color: var(--basic-light-grey);
   background-image: url(../img/background-photo-index.jpg);
@@ -166,13 +168,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.banner-mask {
-  align-self: stretch;
+.banner-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 100%;
   height: 57px;
+  bottom: 0px;
   background-image: url(../img/background-index-mask.svg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .common-section-description {
@@ -252,11 +259,40 @@ body {
 }
 
 .feature-item {
+  position: relative;
   text-align: center;
   color: var(--basic-dark);
   background-color: var(--basic-white);
   padding-top: 160px;
   padding-bottom: 82px;
+}
+
+.feature-item::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.feature-item-residence::before {
+  top: 60px;
+  width: 75px;
+  height: 72px;
+  background-image: url(../img/house-icon.svg);
+}
+
+.feature-item-food::before {
+  top: 62px;
+  width: 75px;
+  height: 70px;
+  background-image: url(../img/food-icon.svg);
+}
+
+.feature-item-souvenirs::before {
+  top: 55px;
+  width: 64px;
+  height: 77px;
+  background-image: url(../img/gift-icon.svg);
 }
 
 .feature-text {
@@ -375,8 +411,8 @@ body {
   align-items: center;
 }
 
-.footer-copyright p {
-  padding: 0;
+.footer-copyright-link {
+  margin-left: 8px;
 }
 
 /* catalog */
