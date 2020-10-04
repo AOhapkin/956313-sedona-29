@@ -726,6 +726,10 @@ body {
   text-transform: uppercase;
 }
 
+.price-controls-input::placeholder {
+  color: var(--basic-white);
+}
+
 .range-controls {
   position: relative;
   height: 42px;
