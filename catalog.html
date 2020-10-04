@@ -69,6 +69,19 @@
           </fieldset>
           <fieldset class="filter-fieldset">
             <legend class="caption legend-caption">Стоимость в сутки (Р):</legend>
+            <div class="range-filter">
+              <div class="price-controls">
+                <input class="price-controls-input" type="text" name="min-price" value="от 0" placeholder="от 0">
+                <input class="price-controls-input" type="text" name="max-price" value="до 3000" placeholder="до 3000">
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+            </div>
             <button class="button filter-form-button" type="button">Показать</button>
           </fieldset>
         </form>
@@ -76,24 +89,36 @@
 
       <section class="sort-section">
         <h2 class="visually-hidden">Сортировка найденных вариантов</h2>
-        <div class="sort-buttons">
+        <p class="caption sort-result">Найдено: <span class="result">3</span></p>
+        <div class="sort-types">
           <span>Сортировка:</span>
-          <button class="sort-button current-sort-button" type="button">По цене</button>
-          <button class="sort-button" type="button">По типу</button>
-          <button class="sort-button" type="button">По рейтингу</button>
-          <p class="caption sort-result">Найдено: 3</p>
+          <a class="sort-type current-sort-type" href="">По цене</a>
+          <a class="sort-type" href="">По типу</a>
+          <a class="sort-type" href="">По рейтингу</a>
         </div>
-        <div class="sort"></div>
-        <!-- Здесь будет форма сортировки -->
+        <div class="sort-direction">
+          <a class="direction-item regular-direction" href="">
+            <span class="visually-hidden">По возрастанию</span>
+            <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/>
+            </svg>
+          </a>
+          <a class="direction-item reverse-direction current-direction" href="">
+            <span class="visually-hidden">По убыванию</span>
+            <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/>
+            </svg>
+          </a>
+        </div>
       </section>
 
       <section class="search-result-section">
         <ul class="search-result-list">
           <li class="search-result-item">
+            <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
             <div class="item-info">
               <a class="item-link" href="">
                 <h3 class="item-name caption">Amara Resort & Spa</h3>
-                <img class="item-photo" src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
               </a>
               <div class="item-info-wrapper">
                 <div class="item-type">
@@ -113,10 +138,10 @@
           </li>
 
           <li class="search-result-item">
+            <img src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             <div class="item-info">
               <a class="item-link" href="">
                 <h3 class="item-name caption">Desert Quail Inn</h3>
-                <img class="item-photo" src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
               </a>
               <div class="item-info-wrapper">
                 <div class="item-type">
@@ -136,10 +161,10 @@
           </li>
 
           <li class="search-result-item">
+            <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
             <div class="item-info">
               <a class="item-link" href="">
                 <h3 class="item-name caption">Villas at Poco Diablo</h3>
-                <img class="item-photo" src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
               </a>
               <div class="item-info-wrapper">
                 <div class="item-type">
