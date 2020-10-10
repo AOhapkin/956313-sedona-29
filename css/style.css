@@ -218,7 +218,10 @@ body {
 }
 
 .common-section-caption {
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 42px;
+  width: 470px;
 }
 
 .common-section-text {
@@ -277,12 +280,16 @@ body {
 
 .advantage-caption {
   margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 120px;
   line-height: 22px;
   color: var(--basic-black);
 }
 
 .advantage-item:nth-child(1) .advantage-caption,
 .advantage-item:nth-child(2) .advantage-caption {
+  width: 150px;
   color: var(--basic-white);
 }
 
@@ -293,8 +300,20 @@ body {
 
 .advantage-text {
   margin: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0;
+  width: 262px;
   line-height: 22px;
+}
+
+.advantage-item:nth-child(1) .advantage-text,
+.advantage-item:nth-child(2) .advantage-text {
+  width: 310px;
+}
+
+.advantage-item:last-child .advantage-text {
+  width: 250px;
 }
 
 .features-list {
@@ -349,7 +368,18 @@ body {
 
 .feature-text {
   margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
   line-height: 22px;
+}
+
+.feature-item-residence .feature-text {
+  width: 255px;
+}
+
+.feature-item-souvenirs .feature-text {
+  width: 270px;
 }
 
 /* search-section */
@@ -456,6 +486,7 @@ body {
 .form-input::placeholder {
   text-transform: uppercase;
   color: var(--basic-black);
+  opacity: 1;
 }
 
 .form-input:hover {
@@ -475,17 +506,21 @@ body {
   padding-left: 13px;
 }
 
-.input-date-icon {
+.input-date-button {
   position: absolute;
   top: 7px;
   right: 64px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
 }
 
-.input-date:hover + .input-date-icon path {
+.input-date-button:hover path {
   fill: var(--basic-black);
 }
 
-.input-date:active + .input-date-icon path {
+.input-date-button:active path {
   fill: var(--basic-blue);
 }
 
@@ -786,6 +821,7 @@ body {
 
 .price-controls-input::placeholder {
   color: var(--basic-white);
+  opacity: 1;
 }
 
 .range-controls {
