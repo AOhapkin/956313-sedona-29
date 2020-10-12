@@ -761,6 +761,10 @@ body {
   background-image: url(../img/checkbox-on-blocked.svg);
 }
 
+.filter-input-checkbox:focus + .filter-option-label {
+  outline: 1px solid var(--basic-black);
+}
+
 .filter-form-button {
   width: min-content;
   margin-top: 15px;
