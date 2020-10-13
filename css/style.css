@@ -428,9 +428,42 @@ body {
   background-color: var(--basic-extra-dark-brown);
 }
 
+@keyframes appear {
+  0% {
+    transform: translateY(-280px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .search-form {
   position: absolute;
   left: 0;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -441,7 +474,19 @@ body {
 
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+
+  animation: appear 0.6s;
 }
+
+.search-form--hide {
+  display: none;
+}
+
+.search-form--error {
+  animation: shake 0.5s;
+}
+
+
 
 .search-form-item {
   position: relative;
@@ -576,6 +621,11 @@ body {
 
 .search-form-button:active {
   background-color: var(--basic-extra-dark-blue);
+}
+
+.map {
+  position: relative;
+  z-index: -2;
 }
 
 .map iframe {
