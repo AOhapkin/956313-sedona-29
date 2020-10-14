@@ -195,7 +195,7 @@ body {
   align-items: center;
   min-height: 509px;
   padding-top: 76px;
-  background-color: var(--basic-light-grey);
+  background-color: var(--basic-dark);
   background-image: url(../img/background-photo-index.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -443,28 +443,6 @@ body {
   }
 }
 
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
-
 .search-form {
   position: absolute;
   left: 50%;
@@ -486,12 +464,6 @@ body {
 .search-form--hide {
   display: none;
 }
-
-.search-form--error {
-  animation: shake 0.5s;
-}
-
-
 
 .search-form-item {
   position: relative;
