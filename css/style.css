@@ -409,7 +409,7 @@ body {
 
 .search-form-wrapper {
   position: relative;
-  min-width: 568px;
+  width: 568px;
 }
 
 .search-form-open-button {
