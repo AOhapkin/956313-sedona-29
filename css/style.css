@@ -430,11 +430,16 @@ body {
 
 @keyframes appear {
   0% {
-    transform: translateY(-280px);
+    transform: translate(-50%, -86px);
   }
-
+  70% {
+    transform: translate(-50%,30px);
+  }
+  90% {
+    transform: translate(-50%,-10px);
+  }
   100% {
-    transform: translateY(0);
+    transform: translate(-50%,0);
   }
 }
 
@@ -462,13 +467,13 @@ body {
 
 .search-form {
   position: absolute;
-  left: 0;
-  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  width: 100%;
+  width: 568px;
   padding-top: 52px;
   padding-bottom: 55px;
 
@@ -621,11 +626,6 @@ body {
 
 .search-form-button:active {
   background-color: var(--basic-extra-dark-blue);
-}
-
-.map {
-  position: relative;
-  z-index: -2;
 }
 
 .map iframe {
