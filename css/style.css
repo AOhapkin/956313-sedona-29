@@ -143,20 +143,14 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
+  padding-left: 73px;
+  padding-right: 73px;
   padding-top: 14px;
   list-style: none;
 }
 
 .site-navigation-item {
   display: flex;
-}
-
-.site-navigation-item:first-of-type {
-  padding-left: 73px;
-}
-
-.site-navigation-item:last-of-type {
-  padding-right: 73px;
 }
 
 .site-navigation-item:nth-child(4n-1), .site-navigation-item:nth-child(4n) {
