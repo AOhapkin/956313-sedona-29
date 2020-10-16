@@ -23,7 +23,6 @@
   --basic-extra-dark-brown: #503E33;
 }
 
-
 /* global */
 
 *, *::before, *::after {
@@ -148,6 +147,10 @@ body {
   list-style: none;
 }
 
+.site-navigation-item {
+  display: flex;
+}
+
 .site-navigation-item:first-of-type {
   padding-left: 73px;
 }
@@ -157,7 +160,7 @@ body {
 }
 
 .site-navigation-item:nth-child(4n-1), .site-navigation-item:nth-child(4n) {
-  text-align: end;
+  justify-content: flex-end;
 }
 
 .site-navigation-link {
@@ -276,6 +279,7 @@ body {
   padding-top: 47px;
   padding-right: 50px;
   padding-left: 50px;
+  padding-bottom: 47px;
 }
 
 .advantage-item:nth-of-type(1), .advantage-item:nth-of-type(2) {
@@ -296,9 +300,7 @@ body {
 
 .advantage-item-photo img {
   display: block;
-  height: 100%;
 }
-
 
 .advantage-caption {
   margin-bottom: 20px;
@@ -347,6 +349,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: var(--basic-white);
 }
 
 .feature-item {
@@ -355,7 +358,6 @@ body {
   padding-bottom: 82px;
   text-align: center;
   color: var(--basic-dark);
-  background-color: var(--basic-white);
 }
 
 .feature-item::before {
@@ -712,6 +714,10 @@ body {
 
 .search-form-button:active {
   background-color: var(--basic-extra-dark-blue);
+}
+
+.map {
+  background-image: url(../img/map.png);
 }
 
 .map iframe {
@@ -1101,6 +1107,10 @@ body {
   border-bottom: 1px solid var(--bacic-border-grey);
 }
 
+.sort-types-title {
+  border-bottom: 1px dashed transparent;
+}
+
 .sort-types {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1123,19 +1133,19 @@ body {
 
 .sort-type {
   margin-left: 33px;
-  color: var(--basic-black);
-  opacity: 0.3;
+  color: var(--basic-black-opacity);
+  font-size: 12px;
+  line-height: 12px;
   border-bottom: 1px dashed var(--basic-blue);
 }
 
 .sort-type:hover {
   color: var(--basic-blue);
-  opacity: 1;
 }
 
 .sort-type:active {
   color: var(--basic-black);
-  border: none;
+  border-color: transparent;
 }
 
 .sort-type:first-of-type {
@@ -1145,7 +1155,7 @@ body {
 .current-sort-type {
   color: var(--basic-blue);
   opacity: 1;
-  border: none;
+  border-color: transparent;
 }
 
 .sort-direction {
@@ -1239,8 +1249,10 @@ body {
 }
 
 .item-name {
+  display: block;
   margin: 0;
   padding: 0;
+  width: 600px;
   line-height: 24px;
 }
 
