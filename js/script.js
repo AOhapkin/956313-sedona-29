@@ -9,12 +9,13 @@ searchForm.classList.add('search-form--hide');
 
 searchFormOpenButton.addEventListener('click', function(evt) {
   evt.preventDefault();
+  searchForm.classList.remove('search-form--error');
   searchForm.classList.toggle('search-form--hide');
   searchFormDateIn.focus();
 });
 
-const isStorageSupport = true;
-const storage = '';
+let isStorageSupport = true;
+let storage = '';
 
 try {
   storage = localStorage.getItem('number-adults');
@@ -23,6 +24,7 @@ try {
 }
 
 searchForm.addEventListener('submit', function(evt) {
+  console.log('пустая форма');
   if (!searchFormDateIn.value || !searchFormDateOut.value || !searchFormNumberAdults.value || !searchFormNumberKids.value) {
     evt.preventDefault();
     searchForm.classList.remove('search-form--error');
