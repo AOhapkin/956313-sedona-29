@@ -72,8 +72,10 @@
               <legend class="caption legend-caption">Стоимость в сутки (Р):</legend>
               <div class="range-filter">
                 <div class="price-controls">
-                  <input class="price-controls-input" type="text" name="min-price" placeholder="от 0" required>
-                  <input class="price-controls-input" type="text" name="max-price" placeholder="до 3000" required>
+                  <label class="visually-hidden" for="min-price">Минимальная цена поиска</label>
+                  <input class="price-controls-input" type="text" name="min-price" id="min-price" placeholder="от 0" required>
+                  <label class="visually-hidden" for="max-price">Максимальная цена поиска</label>
+                  <input class="price-controls-input" type="text" name="max-price" id="max-price" placeholder="до 3000" required>
                 </div>
                 <div class="range-controls">
                   <div class="scale">
